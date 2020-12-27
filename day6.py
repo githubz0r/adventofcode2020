@@ -1,7 +1,7 @@
 import numpy as np
 import functools
 questions = []
-with open('/Users/Deathvoodoo/big_folders_docs/code_advent/day6.txt') as input:
+with open('day6.txt') as input:
     cur_qu = []
     lines = input.readlines()
     for line in lines:

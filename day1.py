@@ -1,8 +1,6 @@
 import numpy as np
 import functools
-numbers = np.loadtxt(
-    '/Users/Deathvoodoo/big_folders_docs/code_advent/day1.txt',
-    dtype=int)
+numbers = np.loadtxt('day1.txt', dtype=int)
 sum_to_2020 = []
 for i,j in enumerate(numbers):
     for k,l in enumerate(numbers):

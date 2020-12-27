@@ -1,5 +1,5 @@
 patterns = []
-with open('/Users/Deathvoodoo/big_folders_docs/code_advent/day3.txt') as input:
+with open('day3.txt') as input:
     lines = input.readlines()
     for line in lines:
         line = line.strip()

@@ -1,6 +1,6 @@
 import re
 inner_bag_re = re.compile('(\d)(.+)')
-PATH = '/Users/Deathvoodoo/big_folders_docs/code_advent/'
+#PATH = '/Users/Deathvoodoo/big_folders_docs/code_advent/'
 rules_file = 'day7.txt'
 
 def read_rules(file):
@@ -30,7 +30,7 @@ def read_rules(file):
             rules[outer_bag]=bag_dict
     return(rules)
 
-rules = read_rules(PATH+rules_file)
+rules = read_rules(rules_file)
 
 def check_key(bag_rules, outer_bag, inner_bag):
     has_bag = 0

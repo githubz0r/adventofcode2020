@@ -19,14 +19,6 @@ def xmas(nrs, n_preamble=25):
         N_iters -= 1
     return(is_valid)
 
-def make_sum_list(preamble):
-    n_preamble = len(preamble)
-    possible_sums = []
-    for index, i in enumerate(preamble):
-        not_same_num = np.arange(n_preamble)!=index
-        sums_i = preamble + i
-        possible_sums.append(sums_i[not_same_num])
-    return possible_sums
 
 def make_sums(preamble):
     x, y = np.meshgrid(preamble, preamble)
@@ -66,7 +58,7 @@ def run_sum(nrs, idx, max_val):
         running_sum += nrs[i]
     return(running_sum, contig)
 
-contigs_test = get_contig(nrs, 85848519)
+contigs_test = get_contig(nrs, nrs[first_number])
 test_sum = [sum(i) for i in contigs_test]
 print(contigs_test)
 print(test_sum)

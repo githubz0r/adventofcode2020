@@ -1,5 +1,5 @@
 import numpy as np 
-strs = np.genfromtxt('/Users/Deathvoodoo/big_folders_docs/code_advent/day5.txt', dtype='str')
+strs = np.genfromtxt('day5.txt', dtype='str')
 
 def binary_read(strng, N=128):
     rows = np.arange(N)

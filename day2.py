@@ -1,7 +1,7 @@
 import numpy as np
 import re
 day2strings = []
-with open('/Users/Deathvoodoo/big_folders_docs/code_advent/day2.txt') as input:
+with open('day2.txt') as input:
     lines = input.readlines()
     for line in lines:
         line = line.strip()

@@ -45,15 +45,15 @@ def check_jmp_nop(instruction_list, index):
     else:
         new_instruc = cur_instruc
     instructions_list_cp[index] = new_instruc
-    acc, did_break = carry_instruction(instructions_list_cp, 0) # set proper index for the whole program i.e.  0
+    acc, did_break = carry_instruction(instructions_list_cp, 0) # start at 0
     is_terminator = False
     if did_break == True:
         is_terminator = True
     return acc, is_terminator
 
-#print(instructions[3])
+
 check_instructions = [check_jmp_nop(instructions, i) for i in range(len(instructions))]
-#print(instructions[3])
+
 did_terminate = np.array([i[1] for i in check_instructions])
 acc_value = np.array([i[0] for i in check_instructions])
 

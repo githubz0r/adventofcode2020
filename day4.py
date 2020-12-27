@@ -1,7 +1,7 @@
 import numpy as np
 import re
 passports = []
-with open('/Users/Deathvoodoo/big_folders_docs/code_advent/day4.txt') as input:
+with open('day4.txt') as input:
     cur_pw = []
     lines = input.readlines()
     for line in lines:
